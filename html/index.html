@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-logo">
+        <h1>LOGO</h1>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="#">For Supplier</a></li>
+          <li><a href="#">For Retailer</a></li>
+          <li><a href="#">Location</a></li>
+        </ul>
+        <button type="submit" class="nav-btn">Request a Quote</button>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#">For Supplier</a></li>
+        <li><a href="#">For Retailer</a></li>
+        <li><a href="#">Location</a></li>
+      </ul>
+      <button type="submit" class="nav-btn">Request a Quote</button>
+    </div>
+
+    <nav class="navbar2">
+      <div class="nav2-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">What We Do</a></li>
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <div class="barner_parent">
+      <div class="baner_child">
+        <div class="child">
+          <div class="child1">
+            <div>
+              <h2>Assarain Food Products L.L.C,</h2>
+              <p>
+                Oman Best Food Distributor Natural, Organic, Specialty, <br />
+                And Fresh.
+              </p>
+              <button>Request a Quot</button>
+            </div>
+          </div>
+
+          <div class="child2">
+            <div>
+              <img src="../assets/images/banner-icon.png" alt="icon" />
+              <img
+                id="img"
+                src="../assets/images/OurBanner/baner-image1.webp"
+                alt=""
+              />
+              <p>Video of a Warehouse How Our Distribution Process Work…</p>
+              <p id="test">READ MORE</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUR Brand -->
+    <div class="our-brand">
+      <div class="our-brand-child1">
+        <h2>Our Brands</h2>
+        <p>
+          Our way forward strategy is to work with more international brands and
+          leverage our sales expertise and marketing skills in the market for
+          the development of the brand & gain market share. Below are some of
+          our brand partners in the Retail & Foodservices sectors.
+        </p>
+      </div>
+      <div class="our-brand-child2">
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img1.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img2.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img3.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img4.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img5.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img6.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img7.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img2.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img6.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img4.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img5.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img6.png" alt="" />
+        </div>
+        <div class="our-brand-child2-item">
+          <img src="../assets/images/OurBanner/img7.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("mobileMenu");
+        if (menu.classList.contains("open")) {
+          menu.style.display = "none";
+          setTimeout(() => menu.classList.remove("open"), 300);
+        } else {
+          menu.style.display = "flex";
+          setTimeout(() => menu.classList.add("open"), 0);
+        }
+      }
+    </script>
+  </body>
+</html>
